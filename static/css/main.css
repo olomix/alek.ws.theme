@@ -17,6 +17,14 @@ body {
     margin-top: 40px;
 }
 
-[class^="icomoon-"], [class*=" icomoon-"] {
+a [class^="icomoon-"], a [class*=" icomoon-"], a [class^="glyphicon-"], a [class*=" glyphicon-"] {
     color: #333;
+}
+
+.article-title a {
+    color: #333;
+}
+
+.main-content {
+    margin-bottom: 40px;
 }

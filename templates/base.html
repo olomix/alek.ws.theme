@@ -67,7 +67,7 @@
             </div>
         </nav>
 
-        <div class="row">
+        <div class="row main-content">
 
             <div class="col-sm-8">{% block content %}{% endblock %}</div>
 
@@ -93,6 +93,18 @@
                                 </a>
                             </li>
                         {% endif %}
+                        <li>
+                            <a href="{{ SITEURL }}/archives.html">
+                                <span class="glyphicon glyphicon-book"></span>
+                                Archives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ SITEURL }}/tags.html">
+                                <span class="glyphicon glyphicon-tags"></span>
+                                Tags
+                            </a>
+                        </li>
                     </ul>
                     {% if SOCIAL or LINKS %}<hr />{% endif %}
                 {% endif %}
@@ -107,7 +119,7 @@
                 {% endif %}
 
                 {% if LINKS %}
-                    <ul>
+                    <ul class="list-unstyled">
                         {% for name, link in LINKS %}
                             <li><a href="{{ link }}">{{ name }}</a></li>
                         {% endfor %}
